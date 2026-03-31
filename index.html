@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS Freshman's Tech Blog | 공학3계열 컴퓨터소프트웨어공학과</title>
+    <meta name="description" content="공학3계열 컴퓨터소프트웨어공학과 신입생의 개발 공부 및 대학 생활 기록 블로그입니다.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="dark-theme">
+    <header id="main-header">
+        <nav class="container">
+            <div class="logo">
+                <span class="code-bracket">&lt;</span>
+                <span class="logo-text">CS_HEART</span>
+                <span class="code-bracket">/&gt;</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#posts">Posts</a></li>
+                <li><a href="#about">About</a></li>
+                <li><button id="theme-toggle" aria-label="Toggle Theme"><i class="fas fa-moon"></i></button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-background">
+                <img src="assets/images/hero_bg.png" alt="Hero Background">
+            </div>
+            <div class="container hero-content">
+                <div class="profile-container">
+                    <img src="assets/images/profile.png" alt="Profile Picture" class="profile-img">
+                    <div class="status-badge">Available for Study</div>
+                </div>
+                <div class="hero-text">
+                    <h2 class="sub-headline">공학3계열 신입생의 기록</h2>
+                    <h1 class="headline">Hello, I'm <span class="highlight">Gang Se-jong</span></h1>
+                    <p class="description">컴퓨터소프트웨어공학과에서 세상을 바꾸는 코드를 꿈꾸는 24학번 새내기입니다. <br>매일 배운 것들을 기록하고 성장하는 과정을 공유합니다.</p>
+                    <div class="hero-btns">
+                        <a href="#posts" class="btn btn-primary">글 읽어보기</a>
+                        <a href="#about" class="btn btn-outline">소개 더보기</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Posts Section -->
+        <section id="posts" class="container section">
+            <div class="section-header">
+                <h2 class="section-title">Latest Updates</h2>
+                <p class="section-subtitle">최근에 공부하고 기록한 내용들입니다.</p>
+            </div>
+            <div id="posts-grid" class="posts-grid">
+                <!-- Posts will be injected here by JS -->
+                <div class="loading">포스트를 불러오는 중...</div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="container section">
+            <div class="glass-card about-card">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2 class="section-title">About Me</h2>
+                        <p>컴퓨터소프트웨어공학과의 든든한 일원이 되기 위해 기초부터 탄탄히 다지고 있습니다. C언어의 포인터와 싸우며 즐거움을 느끼고, 알고리즘의 효율성을 고민하는 시간이 가장 행복합니다.</p>
+                        <div class="skills-tags">
+                            <span class="tag">C Language</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Algorithm</span>
+                            <span class="tag">Web Dev</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Gang Se-jong. All Rights Reserved.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="main.js"></script>
+</body>
+</html>
