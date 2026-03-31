@@ -1,28 +1,28 @@
 :root {
-    /* Color Palette - Dark Theme */
-    --primary-color: #6366f1;
-    --primary-hover: #4f46e5;
-    --accent-color: #10b981;
-    --bg-color: #0f172a;
+    /* Color Palette - Premium Dark Theme */
+    --primary-color: #818cf8;
+    --primary-hover: #6366f1;
+    --accent-color: #34d399;
+    --bg-color: #0c0c0e;
     --text-color: #f8fafc;
     --text-muted: #94a3b8;
-    --glass-bg: rgba(30, 41, 59, 0.7);
-    --glass-border: rgba(148, 163, 184, 0.2);
-    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    --card-bg: rgba(30, 41, 59, 0.5);
+    --glass-bg: rgba(15, 15, 20, 0.8);
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --glass-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.5);
+    --card-bg: rgba(20, 20, 25, 0.6);
     
     /* Layout */
-    --container-width: 1100px;
+    --container-width: 1200px;
 }
 
 .light-theme {
-    --bg-color: #f1f5f9;
-    --text-color: #1e293b;
+    --bg-color: #f8fafc;
+    --text-color: #0f172a;
     --text-muted: #64748b;
-    --glass-bg: rgba(255, 255, 255, 0.7);
-    --glass-border: rgba(30, 41, 59, 0.1);
-    --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
-    --card-bg: rgba(255, 255, 255, 0.8);
+    --glass-bg: rgba(255, 255, 255, 0.8);
+    --glass-border: rgba(0, 0, 0, 0.08);
+    --glass-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.1);
+    --card-bg: rgba(255, 255, 255, 0.9);
 }
 
 /* General Styles */
@@ -336,26 +336,148 @@ nav {
     color: var(--primary-color);
 }
 
-/* About Section */
-.about-card {
-    padding: 3rem;
+/* Portfolio Section */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.portfolio-item {
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    border-radius: 24px;
+}
+
+.portfolio-img-placeholder {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-img-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.portfolio-item:hover .portfolio-img-placeholder img {
+    transform: scale(1.1);
+}
+
+.portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+    display: flex;
+    align-items: flex-end;
+    padding: 2rem;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+    opacity: 1;
+}
+
+.overlay-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.overlay-content p {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-bottom: 1rem;
+}
+
+.btn.mini {
+    padding: 0.5rem 1.2rem;
+    font-size: 0.8rem;
+    border-radius: 8px;
+}
+
+/* About Section Redesign */
+.about-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+}
+
+.about-main {
+    grid-row: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.about-main h3 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+}
+
+.about-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.stat-item i {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.about-skills {
+    grid-column: span 2;
+}
+
+.about-skills h3 {
+    margin-bottom: 1.5rem;
 }
 
 .skills-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.8rem;
-    margin-top: 2rem;
+    justify-content: flex-start;
 }
 
 .tag {
-    background: rgba(99, 102, 241, 0.1);
-    color: var(--primary-color);
-    padding: 0.4rem 1.2rem;
-    border-radius: 50px;
-    font-size: 0.85rem;
-    font-weight: 600;
-    border: 1px solid rgba(99, 102, 241, 0.2);
+    background: rgba(129, 140, 248, 0.1);
+    border: 1px solid rgba(129, 140, 248, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.tag i {
+    font-size: 0.9rem;
+}
+
+/* Scroll Reveal */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* Footer */

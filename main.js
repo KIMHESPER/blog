@@ -93,9 +93,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     fetchPosts();
 
-    // 3. Header Scroll Effect
+    // 3. Header Scroll Effect & Nav Highlighting
     const header = document.getElementById('main-header');
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-links a');
+
     window.addEventListener('scroll', () => {
+        let current = '';
+        
+        // Header padding/shadow
         if (window.scrollY > 50) {
             header.style.padding = '0.5rem 0';
             header.style.boxShadow = 'var(--glass-shadow)';
@@ -103,5 +109,36 @@ document.addEventListener('DOMContentLoaded', () => {
             header.style.padding = '1rem 0';
             header.style.boxShadow = 'none';
         }
+
+        // Active link highlighting
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (window.pageYOffset >= sectionTop - 150) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href').includes(current)) {
+                link.classList.add('active');
+            }
+        });
+    });
+
+    // 4. Scroll Reveal Animation
+    const revealElements = document.querySelectorAll('.reveal');
+    const revealOnScroll = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1 });
+
+    revealElements.forEach(el => {
+        revealOnScroll.observe(el);
     });
 });
