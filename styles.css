@@ -163,6 +163,12 @@ nav {
     z-index: 1;
 }
 
+.hero-content.centered {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+}
+
 .profile-container {
     position: relative;
 }
@@ -218,13 +224,14 @@ nav {
 .description {
     font-size: 1.2rem;
     color: var(--text-muted);
-    margin-bottom: 2.5rem;
+    margin: 0 auto 2.5rem;
     max-width: 600px;
 }
 
 .hero-btns {
     display: flex;
     gap: 1.5rem;
+    justify-content: center;
 }
 
 .btn {
