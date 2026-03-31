@@ -141,4 +141,24 @@ document.addEventListener('DOMContentLoaded', () => {
     revealElements.forEach(el => {
         revealOnScroll.observe(el);
     });
+
+    // 5. Name Scroll Motion
+    const animatedNames = document.querySelectorAll('.animate-name');
+    window.addEventListener('scroll', () => {
+        const scrolled = window.pageYOffset;
+        
+        animatedNames.forEach(el => {
+            const speed = el.classList.contains('highlight') ? 0.15 : 0.05;
+            const yPos = -(scrolled * speed);
+            const scale = 1 + (scrolled * 0.0001);
+            
+            if (el.closest('#main-header')) {
+                // Header logo motion (subtle scale)
+                el.style.transform = `scale(${1 + Math.min(scrolled * 0.0005, 0.05)})`;
+            } else {
+                // Hero name motion (parallax + scale)
+                el.style.transform = `translateY(${yPos}px) scale(${scale})`;
+            }
+        });
+    });
 });
