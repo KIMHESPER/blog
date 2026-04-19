@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post - KANG SEJONG Blog</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@700;800;900&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "background": "#131313",
+                        "surface": "#131313",
+                        "primary": "#adc6ff",
+                        "on-primary": "#002e6a",
+                        "on-surface": "#e5e2e1",
+                        "on-surface-variant": "#c2c6d6",
+                        "outline-variant": "#424754",
+                    },
+                    fontFamily: {
+                        "headline": ["Outfit", "Plus Jakarta Sans"],
+                        "body": ["Inter"],
+                        "mono": ["JetBrains Mono"]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .prose h1, .prose h2, .prose h3 { font-family: 'Outfit', sans-serif; color: var(--primary); margin-top: 2rem; margin-bottom: 1rem; }
+        .prose h1 { font-size: 2.5rem; font-weight: 800; }
+        .prose h2 { font-size: 1.8rem; font-weight: 700; }
+        .prose p { margin-bottom: 1.5rem; line-height: 1.8; color: #c2c6d6; }
+        .prose ul { list-style-type: disc; margin-left: 1.5rem; margin-bottom: 1.5rem; color: #c2c6d6; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary/30 min-h-screen">
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 bg-surface/60 backdrop-blur-xl border-b border-outline-variant/10">
+        <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto w-full">
+            <a href="index.html" class="text-2xl font-black tracking-tighter text-[#adc6ff]">KANGSEJONG</a>
+            <div class="hidden md:flex gap-8 items-center">
+                <a class="text-slate-400 hover:text-[#adc6ff] font-medium transition-colors" href="index.html">Home</a>
+                <a class="text-[#adc6ff] border-b-2 border-[#adc6ff] pb-1 font-medium transition-colors" href="#">Posts</a>
+                <a class="text-slate-400 hover:text-[#adc6ff] font-medium transition-colors" href="#">Portfolio</a>
+                <a class="text-slate-400 hover:text-[#adc6ff] font-medium transition-colors" href="#">About</a>
+            </div>
+            <div class="flex gap-4 items-center">
+                <a href="index.html" class="hover:bg-blue-500/10 p-2 rounded-full transition-colors flex items-center gap-2 text-sm text-[#adc6ff]">
+                    <span class="material-symbols-outlined">arrow_back</span>
+                    <span>Back</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-32 pb-20 px-8 max-w-4xl mx-auto">
+        <article id="post-content" class="hidden">
+            <header class="mb-12">
+                <div class="flex items-center gap-3 mb-6">
+                    <span id="post-category" class="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-mono uppercase tracking-widest">Category</span>
+                    <span id="post-date" class="text-on-surface-variant/50 text-sm font-mono">Date</span>
+                </div>
+                <h1 id="post-title" class="font-headline text-5xl md:text-6xl font-black tracking-tighter leading-tight mb-8">Post Title</h1>
+                <div class="flex items-center gap-4 border-y border-outline-variant/10 py-6">
+                    <div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center">
+                        <span class="material-symbols-outlined text-primary">person</span>
+                    </div>
+                    <div>
+                        <p class="text-sm font-bold">KANG SEJONG</p>
+                        <p id="post-read-time" class="text-xs text-on-surface-variant/60 font-mono">5 min read</p>
+                    </div>
+                </div>
+            </header>
+            
+            <div id="post-body" class="prose max-w-none">
+                <!-- Content will be injected here -->
+            </div>
+        </article>
+
+        <!-- Loading State -->
+        <div id="loading" class="flex flex-col items-center justify-center py-20 space-y-4">
+            <div class="w-12 h-12 border-4 border-primary/20 border-t-primary rounded-full animate-spin"></div>
+            <p class="text-on-surface-variant font-mono animate-pulse">Loading post data...</p>
+        </div>
+
+        <!-- Error State -->
+        <div id="error" class="hidden text-center py-20">
+            <h2 class="text-3xl font-black mb-4">Post Not Found</h2>
+            <p class="mb-8 text-on-surface-variant">요청하신 페이지를 찾을 수 없습니다.</p>
+            <a href="index.html" class="bg-primary text-on-primary px-8 py-3 rounded-xl font-bold">홈으로 돌아가기</a>
+        </div>
+    </main>
+
+    <footer class="w-full border-t border-white/5 bg-[#1c1b1b]">
+        <div class="flex flex-col md:flex-row justify-between items-center py-12 px-8 max-w-7xl mx-auto">
+            <div>
+                <div class="text-sm font-bold text-on-surface mb-2">KANG SEJONG</div>
+                <p class="font-mono text-xs uppercase tracking-widest text-slate-500">© 2024 KANG SEJONG.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        async function loadPost() {
+            const params = new URLSearchParams(window.location.search);
+            const id = params.get('id');
+            
+            if (!id) {
+                showError();
+                return;
+            }
+
+            try {
+                const response = await fetch('posts.json');
+                const posts = await response.json();
+                const post = posts.find(p => p.id == id);
+
+                if (post) {
+                    renderPost(post);
+                } else {
+                    showError();
+                }
+            } catch (e) {
+                console.error('Error loading post:', e);
+                showError();
+            }
+        }
+
+        function renderPost(post) {
+            document.title = `${post.title} - KANG SEJONG Blog`;
+            document.getElementById('post-title').textContent = post.title;
+            document.getElementById('post-category').textContent = post.category;
+            document.getElementById('post-date').textContent = post.date;
+            document.getElementById('post-read-time').textContent = `${post.readTime} read`;
+            
+            // Basic Markdown to HTML conversion for simulation
+            const content = post.content || post.excerpt;
+            const htmlContent = content
+                .replace(/^# (.*$)/gim, '<h1>$1</h1>')
+                .replace(/^## (.*$)/gim, '<h2>$2</h2>')
+                .replace(/^\- (.*$)/gim, '<li>$1</li>')
+                .replace(/\n\n/gim, '</p><p>')
+                .replace(/<li>/g, '<ul><li>').replace(/<\/li>\n(?!<li>)/g, '</li></ul>');
+
+            document.getElementById('post-body').innerHTML = `<p>${htmlContent}</p>`;
+            
+            document.getElementById('loading').classList.add('hidden');
+            document.getElementById('post-content').classList.remove('hidden');
+        }
+
+        function showError() {
+            document.getElementById('loading').classList.add('hidden');
+            document.getElementById('error').classList.remove('hidden');
+        }
+
+        window.onload = loadPost;
+    </script>
+</body>
+</html>

@@ -1,164 +1,78 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Theme Toggle
-    const themeToggle = document.getElementById('theme-toggle');
-    const body = document.body;
-    const icon = themeToggle.querySelector('i');
-
-    // Check saved theme
-    const savedTheme = localStorage.getItem('theme') || 'dark-theme';
-    body.className = savedTheme;
-    updateIcon(savedTheme);
-
-    themeToggle.addEventListener('click', () => {
-        if (body.classList.contains('dark-theme')) {
-            body.className = 'light-theme';
-            localStorage.setItem('theme', 'light-theme');
-            updateIcon('light-theme');
-        } else {
-            body.className = 'dark-theme';
-            localStorage.setItem('theme', 'dark-theme');
-            updateIcon('dark-theme');
-        }
-    });
-
-    function updateIcon(theme) {
-        if (theme === 'dark-theme') {
-            icon.className = 'fas fa-sun';
-        } else {
-            icon.className = 'fas fa-moon';
-        }
-    }
-
-    // 2. Load Posts
     const postsGrid = document.getElementById('posts-grid');
+    const loadMoreBtn = document.getElementById('load-more-btn');
+    let allPosts = [];
+    let displayedCount = 0;
+    const increment = 6;
 
     async function fetchPosts() {
         try {
             const response = await fetch('posts.json');
-            if (!response.ok) throw new Error('Network response was not ok');
-            const posts = await response.json();
-            renderPosts(posts);
+            allPosts = await response.json();
+            // Sort by date descending
+            allPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
+            renderNextBatch();
         } catch (error) {
-            console.warn('Error fetching posts, using fallback data:', error);
-            // Fallback for local viewing (CORS)
-            const fallbackPosts = [
-                {
-                    "id": 1,
-                    "title": "Hello World: 포인터를 정복하는 그날까지",
-                    "excerpt": "드디어 컴퓨터소프트웨어공학과 24학번으로 입학했습니다! 기초부터 차근차근 배우고 있습니다.",
-                    "date": "2026-03-02",
-                    "category": "Daily Log",
-                    "readTime": "3 min"
-                },
-                {
-                    "id": 2,
-                    "title": "왜 컴퓨터소프트웨어공학과인가?",
-                    "excerpt": "소프트웨어로 세상을 이롭게 하고 싶은 제 꿈과 포부를 담았습니다.",
-                    "date": "2026-03-15",
-                    "category": "Thought",
-                    "readTime": "5 min"
-                }
-            ];
-            renderPosts(fallbackPosts);
+            console.error('Error fetching posts:', error);
+            postsGrid.innerHTML = '<p class="col-span-full text-center text-on-surface-variant">시스템 데이터를 불러오는 중 오류가 발생했습니다.</p>';
         }
     }
 
-    function renderPosts(posts) {
-        postsGrid.innerHTML = '';
-        posts.forEach((post, index) => {
-            const card = document.createElement('article');
-            card.className = 'glass-card post-card';
-            card.style.animationDelay = `${index * 0.1}s`;
-            
-            card.innerHTML = `
-                <div class="card-meta">
-                    <span class="category">${post.category}</span>
-                    <span class="date">${post.date}</span>
-                </div>
-                <h3 class="card-title">${post.title}</h3>
-                <p class="card-excerpt">${post.excerpt}</p>
-                <div class="card-footer">
-                    <span class="read-more">Learn More <i class="fas fa-arrow-right"></i></span>
-                    <span class="read-time" style="font-size: 0.8rem; color: var(--text-muted); float: right;">${post.readTime} read</span>
-                </div>
-            `;
-            
-            card.addEventListener('click', () => {
-                alert(`"${post.title}" 글은 현재 준비 중입니다!`);
-            });
-            
+    function renderNextBatch() {
+        const nextBatch = allPosts.slice(displayedCount, displayedCount + increment);
+        nextBatch.forEach((post, index) => {
+            const card = createPostCard(post, index);
             postsGrid.appendChild(card);
         });
+        
+        displayedCount += nextBatch.length;
+        
+        if (displayedCount >= allPosts.length) {
+            loadMoreBtn.style.display = 'none';
+        }
     }
 
+    function createPostCard(post, index) {
+        const article = document.createElement('article');
+        article.className = 'group relative p-8 rounded-2xl bg-surface-container-highest/40 border border-outline-variant/10 backdrop-blur-md hover:bg-surface-container-highest transition-all duration-300 cursor-pointer overflow-hidden';
+        article.style.animation = `fadeIn 0.5s ease forwards ${index * 0.1}s`;
+        article.style.opacity = '0';
+        
+        article.innerHTML = `
+            <div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            <div class="relative z-10">
+                <div class="flex justify-between items-center mb-4">
+                    <span class="font-mono text-xs text-primary px-2 py-1 bg-primary/10 rounded-full">${post.category}</span>
+                    <span class="font-mono text-[10px] text-on-surface-variant/50">${post.date}</span>
+                </div>
+                <h3 class="text-xl font-bold mb-4 group-hover:text-primary transition-colors line-clamp-2">${post.title}</h3>
+                <p class="text-on-surface-variant text-sm mb-6 line-clamp-3 leading-relaxed">${post.excerpt}</p>
+                <div class="flex items-center justify-between mt-auto pt-4 border-t border-outline-variant/5">
+                    <span class="text-xs font-mono text-on-surface-variant/60">${post.readTime} read</span>
+                    <span class="text-primary group-hover:translate-x-1 transition-transform">
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </span>
+                </div>
+            </div>
+        `;
+        
+        article.onclick = () => {
+            window.location.href = `post.html?id=${post.id}`;
+        };
+        
+        return article;
+    }
+
+    loadMoreBtn.addEventListener('click', renderNextBatch);
     fetchPosts();
-
-    // 3. Header Scroll Effect & Nav Highlighting
-    const header = document.getElementById('main-header');
-    const sections = document.querySelectorAll('section');
-    const navLinks = document.querySelectorAll('.nav-links a');
-
-    window.addEventListener('scroll', () => {
-        let current = '';
-        
-        // Header padding/shadow
-        if (window.scrollY > 50) {
-            header.style.padding = '0.5rem 0';
-            header.style.boxShadow = 'var(--glass-shadow)';
-        } else {
-            header.style.padding = '1rem 0';
-            header.style.boxShadow = 'none';
-        }
-
-        // Active link highlighting
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
-            if (window.pageYOffset >= sectionTop - 150) {
-                current = section.getAttribute('id');
-            }
-        });
-
-        navLinks.forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href').includes(current)) {
-                link.classList.add('active');
-            }
-        });
-    });
-
-    // 4. Scroll Reveal Animation
-    const revealElements = document.querySelectorAll('.reveal');
-    const revealOnScroll = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('active');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, { threshold: 0.1 });
-
-    revealElements.forEach(el => {
-        revealOnScroll.observe(el);
-    });
-
-    // 5. Name Scroll Motion
-    const animatedNames = document.querySelectorAll('.animate-name');
-    window.addEventListener('scroll', () => {
-        const scrolled = window.pageYOffset;
-        
-        animatedNames.forEach(el => {
-            const speed = el.classList.contains('highlight') ? 0.15 : 0.05;
-            const yPos = -(scrolled * speed);
-            const scale = 1 + (scrolled * 0.0001);
-            
-            if (el.closest('#main-header')) {
-                // Header logo motion (subtle scale)
-                el.style.transform = `scale(${1 + Math.min(scrolled * 0.0005, 0.05)})`;
-            } else {
-                // Hero name motion (parallax + scale)
-                el.style.transform = `translateY(${yPos}px) scale(${scale})`;
-            }
-        });
-    });
 });
+
+// Animation for cards
+const style = document.createElement('style');
+style.textContent = `
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+`;
+document.head.appendChild(style);

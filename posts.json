@@ -2,7 +2,7 @@
     {
         "id": 1,
         "title": "Hello World: 포인터를 정복하는 그날까지",
-        "excerpt": "드디어 컴퓨터소프트웨어공학과 24학번으로 입학했습니다! 첫 전공 수업인 C언어 기초를 배우기 시작했는데, 생각보다 복잡하지만 재미있네요. 헬로 월드를 출력하면서 느꼈던 설렘을 잊지 않으려고 합니다.",
+        "excerpt": "드디어 컴퓨터소프트웨어공학과 24학번으로 입학했습니다! 기초부터 차근차근 배우고 있습니다.",
         "date": "2026-03-02",
         "category": "Daily Log",
         "readTime": "3 min"
@@ -10,7 +10,7 @@
     {
         "id": 2,
         "title": "왜 컴퓨터소프트웨어공학과인가?",
-        "excerpt": "어릴 적부터 게임을 만들고 싶다는 막연한 꿈이 있었지만, 이제는 세상을 이롭게 하는 소프트웨어를 만들고 싶어 이 전공을 선택했습니다. 3주간의 수업을 들으며 느낀 제 고민과 포부를 정리해 보았습니다.",
+        "excerpt": "소프트웨어로 세상을 이롭게 하고 싶은 제 꿈과 포부를 담았습니다.",
         "date": "2026-03-15",
         "category": "Thought",
         "readTime": "5 min"
@@ -18,9 +18,468 @@
     {
         "id": 3,
         "title": "나만의 개인 블로그 제작기 (HTML/CSS)",
-        "excerpt": "바닐라 HTML과 CSS만을 이용해 나만의 포트폴리오 겸 블로그를 만들어 보았습니다. 글래스모피즘 디자인을 적용해 보았는데, 코드로 시각적인 화려함을 표현하는 즐거움을 알게 된 프로젝트였습니다.",
+        "excerpt": "바닐라 HTML과 CSS만을 이용해 나만의 포트폴리오 겸 블로그를 만들어 보았습니다.",
         "date": "2026-03-31",
         "category": "Project",
         "readTime": "4 min"
+    },
+    {
+        "id": 4,
+        "title": "웹 크롤러 만들기 #4",
+        "excerpt": "Python 분야의 웹 크롤러 만들기 #4에 대한 심도 있는 내용을 다룹니다. 신입생의 시각으로 정리해 보았습니다.",
+        "date": "2026-04-01",
+        "category": "Python",
+        "readTime": "6 min",
+        "content": "# 웹 크롤러 만들기 #4\n\n이것은 Python 카테고리에 속하는 웹 크롤러 만들기 #4의 상세 내용입니다.\n\n## 주요 내용\n- 첫 번째 포인트\n- 두 번째 포인트\n\n앞으로 더 많은 내용을 공부하며 채워나갈 예정입니다."
+    },
+    {
+        "id": 5,
+        "title": "BFS와 DFS #5",
+        "excerpt": "Algorithms 분야의 BFS와 DFS #5에 대한 심도 있는 내용을 다룹니다. 신입생의 시각으로 정리해 보았습니다.",
+        "date": "2026-04-02",
+        "category": "Algorithms",
+        "readTime": "8 min",
+        "content": "# BFS와 DFS #5\n\n이것은 Algorithms 카테고리에 속하는 BFS와 DFS #5의 상세 내용입니다.\n\n## 주요 내용\n- 첫 번째 포인트\n- 두 번째 포인트\n\n앞으로 더 많은 내용을 공부하며 채워나갈 예정입니다."
+    },
+    {
+        "id": 6,
+        "title": "C언어로 만드는 테트리스 #6",
+        "excerpt": "C Programming 분야의 C언어로 만드는 테트리스 #6에 대한 심도 있는 내용을 다룹니다. 신입생의 시각으로 정리해 보았습니다.",
+        "date": "2026-04-03",
+        "category": "C Programming",
+        "readTime": "9 min",
+        "content": "# C언어로 만드는 테트리스 #6\n\n이것은 C Programming 카테고리에 속하는 C언어로 만드는 테트리스 #6의 상세 내용입니다.\n\n## 주요 내용\n- 첫 번째 포인트\n- 두 번째 포인트\n\n앞으로 더 많은 내용을 공부하며 채워나갈 예정입니다."
+    },
+    {
+        "id": 7,
+        "title": "스택과 큐 #7",
+        "excerpt": "Data Structures 분야의 스택과 큐 #7에 대한 심도 있는 내용을 다룹니다. 신입생의 시각으로 정리해 보았습니다.",
+        "date": "2026-04-04",
+        "category": "Data Structures",
+        "readTime": "5 min",
+        "content": "# 스택과 큐 #7\n\n이것은 Data Structures 카테고리에 속하는 스택과 큐 #7의 상세 내용입니다.\n\n## 주요 내용\n- 첫 번째 포인트\n- 두 번째 포인트\n\n앞으로 더 많은 내용을 공부하며 채워나갈 예정입니다."
+    },
+    {
+        "id": 8,
+        "title": "해시 테이블의 마법 #8",
+        "excerpt": "Data Structures 분야의 해시 테이블의 마법 #8에 대한 심도 있는 내용을 다룹니다. 신입생의 시각으로 정리해 보았습니다.",
+        "date": "2026-04-05",
+        "category": "Data Structures",
+        "readTime": "3 min",
+        "content": "# 해시 테이블의 마법 #8\n\n이것은 Data Structures 카테고리에 속하는 해시 테이블의 마법 #8의 상세 내용입니다.\n\n## 주요 내용\n- 첫 번째 포인트\n- 두 번째 포인트\n\n앞으로 더 많은 내용을 공부하며 채워나갈 예정입니다."
+    },
+    {
+        "id": 9,
+        "title": "맥북 vs 윈도우 노트북 #9",
+        "excerpt": "University Life 분야의 맥북 vs 윈도우 노트북 #9에 대한 심도 있는 내용을 다룹니다. 신입생의 시각으로 정리해 보았습니다.",
+        "date": "2026-04-06",
+        "category": "University Life",
+        "readTime": "8 min",
+        "content": "# 맥북 vs 윈도우 노트북 #9\n\n이것은 University Life 카테고리에 속하는 맥북 vs 윈도우 노트북 #9의 상세 내용입니다.\n\n## 주요 내용\n- 첫 번째 포인트\n- 두 번째 포인트\n\n앞으로 더 많은 내용을 공부하며 채워나갈 예정입니다."
+    },
+    {
+        "id": 10,
+        "title": "프론트엔드 프레임워크 비교 #10",
+        "excerpt": "Web Development 분야의 프론트엔드 프레임워크 비교 #10에 대한 심도 있는 내용을 다룹니다. 신입생의 시각으로 정리해 보았습니다.",
+        "date": "2026-04-07",
+        "category": "Web Development",
+        "readTime": "6 min",
+        "content": "# 프론트엔드 프레임워크 비교 #10\n\n이것은 Web Development 카테고리에 속하는 프론트엔드 프레임워크 비교 #10의 상세 내용입니다.\n\n## 주요 내용\n- 첫 번째 포인트\n- 두 번째 포인트\n\n앞으로 더 많은 내용을 공부하며 채워나갈 예정입니다."
+    },
+    {
+        "id": 11,
+        "title": "그리디 알고리즘 #11",
+        "excerpt": "Algorithms 분야의 그리디 알고리즘 #11에 대한 심도 있는 내용을 다룹니다. 신입생의 시각으로 정리해 보았습니다.",
+        "date": "2026-04-08",
+        "category": "Algorithms",
+        "readTime": "7 min",
+        "content": "# 그리디 알고리즘 #11\n\n이것은 Algorithms 카테고리에 속하는 그리디 알고리즘 #11의 상세 내용입니다.\n\n## 주요 내용\n- 첫 번째 포인트\n- 두 번째 포인트\n\n앞으로 더 많은 내용을 공부하며 채워나갈 예정입니다."
+    },
+    {
+        "id": 12,
+        "title": "스택과 큐 #12",
+        "excerpt": "Data Structures 분야의 스택과 큐 #12에 대한 심도 있는 내용을 다룹니다. 신입생의 시각으로 정리해 보았습니다.",
+        "date": "2026-04-09",
+        "category": "Data Structures",
+        "readTime": "4 min",
+        "content": "# 스택과 큐 #12\n\n이것은 Data Structures 카테고리에 속하는 스택과 큐 #12의 상세 내용입니다.\n\n## 주요 내용\n- 첫 번째 포인트\n- 두 번째 포인트\n\n앞으로 더 많은 내용을 공부하며 채워나갈 예정입니다."
+    },
+    {
+        "id": 13,
+        "title": "리눅스 명령어 모음 #13",
+        "excerpt": "CS Fundamentals 분야의 리눅스 명령어 모음 #13에 대한 심도 있는 내용을 다룹니다. 신입생의 시각으로 정리해 보았습니다.",
+        "date": "2026-04-10",
+        "category": "CS Fundamentals",
+        "readTime": "8 min",
+        "content": "# 리눅스 명령어 모음 #13\n\n이것은 CS Fundamentals 카테고리에 속하는 리눅스 명령어 모음 #13의 상세 내용입니다.\n\n## 주요 내용\n- 첫 번째 포인트\n- 두 번째 포인트\n\n앞으로 더 많은 내용을 공부하며 채워나갈 예정입니다."
+    },
+    {
+        "id": 14,
+        "title": "CSS Flexbox와 Grid #14",
+        "excerpt": "Web Development 분야의 CSS Flexbox와 Grid #14에 대한 심도 있는 내용을 다룹니다. 신입생의 시각으로 정리해 보았습니다.",
+        "date": "2026-04-11",
+        "category": "Web Development",
+        "readTime": "9 min",
+        "content": "# CSS Flexbox와 Grid #14\n\n이것은 Web Development 카테고리에 속하는 CSS Flexbox와 Grid #14의 상세 내용입니다.\n\n## 주요 내용\n- 첫 번째 포인트\n- 두 번째 포인트\n\n앞으로 더 많은 내용을 공부하며 채워나갈 예정입니다."
+    },
+    {
+        "id": 15,
+        "title": "그리디 알고리즘 #15",
+        "excerpt": "Algorithms 분야의 그리디 알고리즘 #15에 대한 심도 있는 내용을 다룹니다. 신입생의 시각으로 정리해 보았습니다.",
+        "date": "2026-04-12",
+        "category": "Algorithms",
+        "readTime": "11 min",
+        "content": "# 그리디 알고리즘 #15\n\n이것은 Algorithms 카테고리에 속하는 그리디 알고리즘 #15의 상세 내용입니다.\n\n## 주요 내용\n- 첫 번째 포인트\n- 두 번째 포인트\n\n앞으로 더 많은 내용을 공부하며 채워나갈 예정입니다."
+    },
+    {
+        "id": 16,
+        "title": "자바스크립트 비동기 처리 #16",
+        "excerpt": "Web Development 분야의 자바스크립트 비동기 처리 #16에 대한 심도 있는 내용을 다룹니다. 신입생의 시각으로 정리해 보았습니다.",
+        "date": "2026-04-13",
+        "category": "Web Development",
+        "readTime": "13 min",
+        "content": "# 자바스크립트 비동기 처리 #16\n\n이것은 Web Development 카테고리에 속하는 자바스크립트 비동기 처리 #16의 상세 내용입니다.\n\n## 주요 내용\n- 첫 번째 포인트\n- 두 번째 포인트\n\n앞으로 더 많은 내용을 공부하며 채워나갈 예정입니다."
+    },
+    {
+        "id": 17,
+        "title": "동적 계획법(DP) 기초 #17",
+        "excerpt": "Algorithms 분야의 동적 계획법(DP) 기초 #17에 대한 심도 있는 내용을 다룹니다. 신입생의 시각으로 정리해 보았습니다.",
+        "date": "2026-04-14",
+        "category": "Algorithms",
+        "readTime": "12 min",
+        "content": "# 동적 계획법(DP) 기초 #17\n\n이것은 Algorithms 카테고리에 속하는 동적 계획법(DP) 기초 #17의 상세 내용입니다.\n\n## 주요 내용\n- 첫 번째 포인트\n- 두 번째 포인트\n\n앞으로 더 많은 내용을 공부하며 채워나갈 예정입니다."
+    },
+    {
+        "id": 18,
+        "title": "컴퓨터 네트워크 기초 #18",
+        "excerpt": "CS Fundamentals 분야의 컴퓨터 네트워크 기초 #18에 대한 심도 있는 내용을 다룹니다. 신입생의 시각으로 정리해 보았습니다.",
+        "date": "2026-04-15",
+        "category": "CS Fundamentals",
+        "readTime": "7 min",
+        "content": "# 컴퓨터 네트워크 기초 #18\n\n이것은 CS Fundamentals 카테고리에 속하는 컴퓨터 네트워크 기초 #18의 상세 내용입니다.\n\n## 주요 내용\n- 첫 번째 포인트\n- 두 번째 포인트\n\n앞으로 더 많은 내용을 공부하며 채워나갈 예정입니다."
+    },
+    {
+        "id": 19,
+        "title": "C언어로 만드는 테트리스 #19",
+        "excerpt": "C Programming 분야의 C언어로 만드는 테트리스 #19에 대한 심도 있는 내용을 다룹니다. 신입생의 시각으로 정리해 보았습니다.",
+        "date": "2026-04-16",
+        "category": "C Programming",
+        "readTime": "11 min",
+        "content": "# C언어로 만드는 테트리스 #19\n\n이것은 C Programming 카테고리에 속하는 C언어로 만드는 테트리스 #19의 상세 내용입니다.\n\n## 주요 내용\n- 첫 번째 포인트\n- 두 번째 포인트\n\n앞으로 더 많은 내용을 공부하며 채워나갈 예정입니다."
+    },
+    {
+        "id": 20,
+        "title": "운영체제의 역할 #20",
+        "excerpt": "CS Fundamentals 분야의 운영체제의 역할 #20에 대한 심도 있는 내용을 다룹니다. 신입생의 시각으로 정리해 보았습니다.",
+        "date": "2026-04-17",
+        "category": "CS Fundamentals",
+        "readTime": "10 min",
+        "content": "# 운영체제의 역할 #20\n\n이것은 CS Fundamentals 카테고리에 속하는 운영체제의 역할 #20의 상세 내용입니다.\n\n## 주요 내용\n- 첫 번째 포인트\n- 두 번째 포인트\n\n앞으로 더 많은 내용을 공부하며 채워나갈 예정입니다."
+    },
+    {
+        "id": 21,
+        "title": "운영체제의 역할 #21",
+        "excerpt": "CS Fundamentals 분야의 운영체제의 역할 #21에 대한 심도 있는 내용을 다룹니다. 신입생의 시각으로 정리해 보았습니다.",
+        "date": "2026-04-18",
+        "category": "CS Fundamentals",
+        "readTime": "3 min",
+        "content": "# 운영체제의 역할 #21\n\n이것은 CS Fundamentals 카테고리에 속하는 운영체제의 역할 #21의 상세 내용입니다.\n\n## 주요 내용\n- 첫 번째 포인트\n- 두 번째 포인트\n\n앞으로 더 많은 내용을 공부하며 채워나갈 예정입니다."
+    },
+    {
+        "id": 22,
+        "title": "파이썬으로 하는 자동화 #22",
+        "excerpt": "Python 분야의 파이썬으로 하는 자동화 #22에 대한 심도 있는 내용을 다룹니다. 신입생의 시각으로 정리해 보았습니다.",
+        "date": "2026-04-19",
+        "category": "Python",
+        "readTime": "4 min",
+        "content": "# 파이썬으로 하는 자동화 #22\n\n이것은 Python 카테고리에 속하는 파이썬으로 하는 자동화 #22의 상세 내용입니다.\n\n## 주요 내용\n- 첫 번째 포인트\n- 두 번째 포인트\n\n앞으로 더 많은 내용을 공부하며 채워나갈 예정입니다."
+    },
+    {
+        "id": 23,
+        "title": "데이터 분석 기초 #23",
+        "excerpt": "Python 분야의 데이터 분석 기초 #23에 대한 심도 있는 내용을 다룹니다. 신입생의 시각으로 정리해 보았습니다.",
+        "date": "2026-04-20",
+        "category": "Python",
+        "readTime": "10 min",
+        "content": "# 데이터 분석 기초 #23\n\n이것은 Python 카테고리에 속하는 데이터 분석 기초 #23의 상세 내용입니다.\n\n## 주요 내용\n- 첫 번째 포인트\n- 두 번째 포인트\n\n앞으로 더 많은 내용을 공부하며 채워나갈 예정입니다."
+    },
+    {
+        "id": 24,
+        "title": "BFS와 DFS #24",
+        "excerpt": "Algorithms 분야의 BFS와 DFS #24에 대한 심도 있는 내용을 다룹니다. 신입생의 시각으로 정리해 보았습니다.",
+        "date": "2026-04-21",
+        "category": "Algorithms",
+        "readTime": "11 min",
+        "content": "# BFS와 DFS #24\n\n이것은 Algorithms 카테고리에 속하는 BFS와 DFS #24의 상세 내용입니다.\n\n## 주요 내용\n- 첫 번째 포인트\n- 두 번째 포인트\n\n앞으로 더 많은 내용을 공부하며 채워나갈 예정입니다."
+    },
+    {
+        "id": 25,
+        "title": "구조체와 공용체 #25",
+        "excerpt": "C Programming 분야의 구조체와 공용체 #25에 대한 심도 있는 내용을 다룹니다. 신입생의 시각으로 정리해 보았습니다.",
+        "date": "2026-04-22",
+        "category": "C Programming",
+        "readTime": "14 min",
+        "content": "# 구조체와 공용체 #25\n\n이것은 C Programming 카테고리에 속하는 구조체와 공용체 #25의 상세 내용입니다.\n\n## 주요 내용\n- 첫 번째 포인트\n- 두 번째 포인트\n\n앞으로 더 많은 내용을 공부하며 채워나갈 예정입니다."
+    },
+    {
+        "id": 26,
+        "title": "파이썬으로 하는 자동화 #26",
+        "excerpt": "Python 분야의 파이썬으로 하는 자동화 #26에 대한 심도 있는 내용을 다룹니다. 신입생의 시각으로 정리해 보았습니다.",
+        "date": "2026-04-23",
+        "category": "Python",
+        "readTime": "10 min",
+        "content": "# 파이썬으로 하는 자동화 #26\n\n이것은 Python 카테고리에 속하는 파이썬으로 하는 자동화 #26의 상세 내용입니다.\n\n## 주요 내용\n- 첫 번째 포인트\n- 두 번째 포인트\n\n앞으로 더 많은 내용을 공부하며 채워나갈 예정입니다."
+    },
+    {
+        "id": 27,
+        "title": "CSS Flexbox와 Grid #27",
+        "excerpt": "Web Development 분야의 CSS Flexbox와 Grid #27에 대한 심도 있는 내용을 다룹니다. 신입생의 시각으로 정리해 보았습니다.",
+        "date": "2026-04-24",
+        "category": "Web Development",
+        "readTime": "4 min",
+        "content": "# CSS Flexbox와 Grid #27\n\n이것은 Web Development 카테고리에 속하는 CSS Flexbox와 Grid #27의 상세 내용입니다.\n\n## 주요 내용\n- 첫 번째 포인트\n- 두 번째 포인트\n\n앞으로 더 많은 내용을 공부하며 채워나갈 예정입니다."
+    },
+    {
+        "id": 28,
+        "title": "복잡한 선언문 해석하기 #28",
+        "excerpt": "C Programming 분야의 복잡한 선언문 해석하기 #28에 대한 심도 있는 내용을 다룹니다. 신입생의 시각으로 정리해 보았습니다.",
+        "date": "2026-04-25",
+        "category": "C Programming",
+        "readTime": "10 min",
+        "content": "# 복잡한 선언문 해석하기 #28\n\n이것은 C Programming 카테고리에 속하는 복잡한 선언문 해석하기 #28의 상세 내용입니다.\n\n## 주요 내용\n- 첫 번째 포인트\n- 두 번째 포인트\n\n앞으로 더 많은 내용을 공부하며 채워나갈 예정입니다."
+    },
+    {
+        "id": 29,
+        "title": "BFS와 DFS #29",
+        "excerpt": "Algorithms 분야의 BFS와 DFS #29에 대한 심도 있는 내용을 다룹니다. 신입생의 시각으로 정리해 보았습니다.",
+        "date": "2026-04-26",
+        "category": "Algorithms",
+        "readTime": "10 min",
+        "content": "# BFS와 DFS #29\n\n이것은 Algorithms 카테고리에 속하는 BFS와 DFS #29의 상세 내용입니다.\n\n## 주요 내용\n- 첫 번째 포인트\n- 두 번째 포인트\n\n앞으로 더 많은 내용을 공부하며 채워나갈 예정입니다."
+    },
+    {
+        "id": 30,
+        "title": "복잡한 선언문 해석하기 #30",
+        "excerpt": "C Programming 분야의 복잡한 선언문 해석하기 #30에 대한 심도 있는 내용을 다룹니다. 신입생의 시각으로 정리해 보았습니다.",
+        "date": "2026-04-27",
+        "category": "C Programming",
+        "readTime": "12 min",
+        "content": "# 복잡한 선언문 해석하기 #30\n\n이것은 C Programming 카테고리에 속하는 복잡한 선언문 해석하기 #30의 상세 내용입니다.\n\n## 주요 내용\n- 첫 번째 포인트\n- 두 번째 포인트\n\n앞으로 더 많은 내용을 공부하며 채워나갈 예정입니다."
+    },
+    {
+        "id": 31,
+        "title": "트리 순회 알고리즘 #31",
+        "excerpt": "Data Structures 분야의 트리 순회 알고리즘 #31에 대한 심도 있는 내용을 다룹니다. 신입생의 시각으로 정리해 보았습니다.",
+        "date": "2026-04-28",
+        "category": "Data Structures",
+        "readTime": "10 min",
+        "content": "# 트리 순회 알고리즘 #31\n\n이것은 Data Structures 카테고리에 속하는 트리 순회 알고리즘 #31의 상세 내용입니다.\n\n## 주요 내용\n- 첫 번째 포인트\n- 두 번째 포인트\n\n앞으로 더 많은 내용을 공부하며 채워나갈 예정입니다."
+    },
+    {
+        "id": 32,
+        "title": "HTML5 시맨틱 태그 #32",
+        "excerpt": "Web Development 분야의 HTML5 시맨틱 태그 #32에 대한 심도 있는 내용을 다룹니다. 신입생의 시각으로 정리해 보았습니다.",
+        "date": "2026-04-29",
+        "category": "Web Development",
+        "readTime": "13 min",
+        "content": "# HTML5 시맨틱 태그 #32\n\n이것은 Web Development 카테고리에 속하는 HTML5 시맨틱 태그 #32의 상세 내용입니다.\n\n## 주요 내용\n- 첫 번째 포인트\n- 두 번째 포인트\n\n앞으로 더 많은 내용을 공부하며 채워나갈 예정입니다."
+    },
+    {
+        "id": 33,
+        "title": "데이터베이스 설계 입문 #33",
+        "excerpt": "CS Fundamentals 분야의 데이터베이스 설계 입문 #33에 대한 심도 있는 내용을 다룹니다. 신입생의 시각으로 정리해 보았습니다.",
+        "date": "2026-04-30",
+        "category": "CS Fundamentals",
+        "readTime": "11 min",
+        "content": "# 데이터베이스 설계 입문 #33\n\n이것은 CS Fundamentals 카테고리에 속하는 데이터베이스 설계 입문 #33의 상세 내용입니다.\n\n## 주요 내용\n- 첫 번째 포인트\n- 두 번째 포인트\n\n앞으로 더 많은 내용을 공부하며 채워나갈 예정입니다."
+    },
+    {
+        "id": 34,
+        "title": "리눅스 명령어 모음 #34",
+        "excerpt": "CS Fundamentals 분야의 리눅스 명령어 모음 #34에 대한 심도 있는 내용을 다룹니다. 신입생의 시각으로 정리해 보았습니다.",
+        "date": "2026-05-01",
+        "category": "CS Fundamentals",
+        "readTime": "8 min",
+        "content": "# 리눅스 명령어 모음 #34\n\n이것은 CS Fundamentals 카테고리에 속하는 리눅스 명령어 모음 #34의 상세 내용입니다.\n\n## 주요 내용\n- 첫 번째 포인트\n- 두 번째 포인트\n\n앞으로 더 많은 내용을 공부하며 채워나갈 예정입니다."
+    },
+    {
+        "id": 35,
+        "title": "링크드 리스트의 이해 #35",
+        "excerpt": "Data Structures 분야의 링크드 리스트의 이해 #35에 대한 심도 있는 내용을 다룹니다. 신입생의 시각으로 정리해 보았습니다.",
+        "date": "2026-05-02",
+        "category": "Data Structures",
+        "readTime": "4 min",
+        "content": "# 링크드 리스트의 이해 #35\n\n이것은 Data Structures 카테고리에 속하는 링크드 리스트의 이해 #35의 상세 내용입니다.\n\n## 주요 내용\n- 첫 번째 포인트\n- 두 번째 포인트\n\n앞으로 더 많은 내용을 공부하며 채워나갈 예정입니다."
+    },
+    {
+        "id": 36,
+        "title": "메모리 동적 할당 #36",
+        "excerpt": "C Programming 분야의 메모리 동적 할당 #36에 대한 심도 있는 내용을 다룹니다. 신입생의 시각으로 정리해 보았습니다.",
+        "date": "2026-05-03",
+        "category": "C Programming",
+        "readTime": "4 min",
+        "content": "# 메모리 동적 할당 #36\n\n이것은 C Programming 카테고리에 속하는 메모리 동적 할당 #36의 상세 내용입니다.\n\n## 주요 내용\n- 첫 번째 포인트\n- 두 번째 포인트\n\n앞으로 더 많은 내용을 공부하며 채워나갈 예정입니다."
+    },
+    {
+        "id": 37,
+        "title": "코딩 동아리 선택법 #37",
+        "excerpt": "University Life 분야의 코딩 동아리 선택법 #37에 대한 심도 있는 내용을 다룹니다. 신입생의 시각으로 정리해 보았습니다.",
+        "date": "2026-05-04",
+        "category": "University Life",
+        "readTime": "9 min",
+        "content": "# 코딩 동아리 선택법 #37\n\n이것은 University Life 카테고리에 속하는 코딩 동아리 선택법 #37의 상세 내용입니다.\n\n## 주요 내용\n- 첫 번째 포인트\n- 두 번째 포인트\n\n앞으로 더 많은 내용을 공부하며 채워나갈 예정입니다."
+    },
+    {
+        "id": 38,
+        "title": "동적 계획법(DP) 기초 #38",
+        "excerpt": "Algorithms 분야의 동적 계획법(DP) 기초 #38에 대한 심도 있는 내용을 다룹니다. 신입생의 시각으로 정리해 보았습니다.",
+        "date": "2026-05-05",
+        "category": "Algorithms",
+        "readTime": "13 min",
+        "content": "# 동적 계획법(DP) 기초 #38\n\n이것은 Algorithms 카테고리에 속하는 동적 계획법(DP) 기초 #38의 상세 내용입니다.\n\n## 주요 내용\n- 첫 번째 포인트\n- 두 번째 포인트\n\n앞으로 더 많은 내용을 공부하며 채워나갈 예정입니다."
+    },
+    {
+        "id": 39,
+        "title": "프론트엔드 프레임워크 비교 #39",
+        "excerpt": "Web Development 분야의 프론트엔드 프레임워크 비교 #39에 대한 심도 있는 내용을 다룹니다. 신입생의 시각으로 정리해 보았습니다.",
+        "date": "2026-05-06",
+        "category": "Web Development",
+        "readTime": "15 min",
+        "content": "# 프론트엔드 프레임워크 비교 #39\n\n이것은 Web Development 카테고리에 속하는 프론트엔드 프레임워크 비교 #39의 상세 내용입니다.\n\n## 주요 내용\n- 첫 번째 포인트\n- 두 번째 포인트\n\n앞으로 더 많은 내용을 공부하며 채워나갈 예정입니다."
+    },
+    {
+        "id": 40,
+        "title": "파이썬답게 코드 짜기 #40",
+        "excerpt": "Python 분야의 파이썬답게 코드 짜기 #40에 대한 심도 있는 내용을 다룹니다. 신입생의 시각으로 정리해 보았습니다.",
+        "date": "2026-05-07",
+        "category": "Python",
+        "readTime": "7 min",
+        "content": "# 파이썬답게 코드 짜기 #40\n\n이것은 Python 카테고리에 속하는 파이썬답게 코드 짜기 #40의 상세 내용입니다.\n\n## 주요 내용\n- 첫 번째 포인트\n- 두 번째 포인트\n\n앞으로 더 많은 내용을 공부하며 채워나갈 예정입니다."
+    },
+    {
+        "id": 41,
+        "title": "백준 플래티넘을 향하여 #41",
+        "excerpt": "Algorithms 분야의 백준 플래티넘을 향하여 #41에 대한 심도 있는 내용을 다룹니다. 신입생의 시각으로 정리해 보았습니다.",
+        "date": "2026-05-08",
+        "category": "Algorithms",
+        "readTime": "4 min",
+        "content": "# 백준 플래티넘을 향하여 #41\n\n이것은 Algorithms 카테고리에 속하는 백준 플래티넘을 향하여 #41의 상세 내용입니다.\n\n## 주요 내용\n- 첫 번째 포인트\n- 두 번째 포인트\n\n앞으로 더 많은 내용을 공부하며 채워나갈 예정입니다."
+    },
+    {
+        "id": 42,
+        "title": "해시 테이블의 마법 #42",
+        "excerpt": "Data Structures 분야의 해시 테이블의 마법 #42에 대한 심도 있는 내용을 다룹니다. 신입생의 시각으로 정리해 보았습니다.",
+        "date": "2026-05-09",
+        "category": "Data Structures",
+        "readTime": "10 min",
+        "content": "# 해시 테이블의 마법 #42\n\n이것은 Data Structures 카테고리에 속하는 해시 테이블의 마법 #42의 상세 내용입니다.\n\n## 주요 내용\n- 첫 번째 포인트\n- 두 번째 포인트\n\n앞으로 더 많은 내용을 공부하며 채워나갈 예정입니다."
+    },
+    {
+        "id": 43,
+        "title": "운영체제의 역할 #43",
+        "excerpt": "CS Fundamentals 분야의 운영체제의 역할 #43에 대한 심도 있는 내용을 다룹니다. 신입생의 시각으로 정리해 보았습니다.",
+        "date": "2026-05-10",
+        "category": "CS Fundamentals",
+        "readTime": "4 min",
+        "content": "# 운영체제의 역할 #43\n\n이것은 CS Fundamentals 카테고리에 속하는 운영체제의 역할 #43의 상세 내용입니다.\n\n## 주요 내용\n- 첫 번째 포인트\n- 두 번째 포인트\n\n앞으로 더 많은 내용을 공부하며 채워나갈 예정입니다."
+    },
+    {
+        "id": 44,
+        "title": "전공 서적 추천 #44",
+        "excerpt": "University Life 분야의 전공 서적 추천 #44에 대한 심도 있는 내용을 다룹니다. 신입생의 시각으로 정리해 보았습니다.",
+        "date": "2026-05-11",
+        "category": "University Life",
+        "readTime": "14 min",
+        "content": "# 전공 서적 추천 #44\n\n이것은 University Life 카테고리에 속하는 전공 서적 추천 #44의 상세 내용입니다.\n\n## 주요 내용\n- 첫 번째 포인트\n- 두 번째 포인트\n\n앞으로 더 많은 내용을 공부하며 채워나갈 예정입니다."
+    },
+    {
+        "id": 45,
+        "title": "웹 크롤러 만들기 #45",
+        "excerpt": "Python 분야의 웹 크롤러 만들기 #45에 대한 심도 있는 내용을 다룹니다. 신입생의 시각으로 정리해 보았습니다.",
+        "date": "2026-05-12",
+        "category": "Python",
+        "readTime": "5 min",
+        "content": "# 웹 크롤러 만들기 #45\n\n이것은 Python 카테고리에 속하는 웹 크롤러 만들기 #45의 상세 내용입니다.\n\n## 주요 내용\n- 첫 번째 포인트\n- 두 번째 포인트\n\n앞으로 더 많은 내용을 공부하며 채워나갈 예정입니다."
+    },
+    {
+        "id": 46,
+        "title": "코딩 동아리 선택법 #46",
+        "excerpt": "University Life 분야의 코딩 동아리 선택법 #46에 대한 심도 있는 내용을 다룹니다. 신입생의 시각으로 정리해 보았습니다.",
+        "date": "2026-05-13",
+        "category": "University Life",
+        "readTime": "13 min",
+        "content": "# 코딩 동아리 선택법 #46\n\n이것은 University Life 카테고리에 속하는 코딩 동아리 선택법 #46의 상세 내용입니다.\n\n## 주요 내용\n- 첫 번째 포인트\n- 두 번째 포인트\n\n앞으로 더 많은 내용을 공부하며 채워나갈 예정입니다."
+    },
+    {
+        "id": 47,
+        "title": "백준 플래티넘을 향하여 #47",
+        "excerpt": "Algorithms 분야의 백준 플래티넘을 향하여 #47에 대한 심도 있는 내용을 다룹니다. 신입생의 시각으로 정리해 보았습니다.",
+        "date": "2026-05-14",
+        "category": "Algorithms",
+        "readTime": "14 min",
+        "content": "# 백준 플래티넘을 향하여 #47\n\n이것은 Algorithms 카테고리에 속하는 백준 플래티넘을 향하여 #47의 상세 내용입니다.\n\n## 주요 내용\n- 첫 번째 포인트\n- 두 번째 포인트\n\n앞으로 더 많은 내용을 공부하며 채워나갈 예정입니다."
+    },
+    {
+        "id": 48,
+        "title": "NumPy와 Pandas 맛보기 #48",
+        "excerpt": "Python 분야의 NumPy와 Pandas 맛보기 #48에 대한 심도 있는 내용을 다룹니다. 신입생의 시각으로 정리해 보았습니다.",
+        "date": "2026-05-15",
+        "category": "Python",
+        "readTime": "4 min",
+        "content": "# NumPy와 Pandas 맛보기 #48\n\n이것은 Python 카테고리에 속하는 NumPy와 Pandas 맛보기 #48의 상세 내용입니다.\n\n## 주요 내용\n- 첫 번째 포인트\n- 두 번째 포인트\n\n앞으로 더 많은 내용을 공부하며 채워나갈 예정입니다."
+    },
+    {
+        "id": 49,
+        "title": "포인터의 공포 #49",
+        "excerpt": "C Programming 분야의 포인터의 공포 #49에 대한 심도 있는 내용을 다룹니다. 신입생의 시각으로 정리해 보았습니다.",
+        "date": "2026-05-16",
+        "category": "C Programming",
+        "readTime": "5 min",
+        "content": "# 포인터의 공포 #49\n\n이것은 C Programming 카테고리에 속하는 포인터의 공포 #49의 상세 내용입니다.\n\n## 주요 내용\n- 첫 번째 포인트\n- 두 번째 포인트\n\n앞으로 더 많은 내용을 공부하며 채워나갈 예정입니다."
+    },
+    {
+        "id": 50,
+        "title": "C언어로 만드는 테트리스 #50",
+        "excerpt": "C Programming 분야의 C언어로 만드는 테트리스 #50에 대한 심도 있는 내용을 다룹니다. 신입생의 시각으로 정리해 보았습니다.",
+        "date": "2026-05-17",
+        "category": "C Programming",
+        "readTime": "13 min",
+        "content": "# C언어로 만드는 테트리스 #50\n\n이것은 C Programming 카테고리에 속하는 C언어로 만드는 테트리스 #50의 상세 내용입니다.\n\n## 주요 내용\n- 첫 번째 포인트\n- 두 번째 포인트\n\n앞으로 더 많은 내용을 공부하며 채워나갈 예정입니다."
+    },
+    {
+        "id": 51,
+        "title": "BFS와 DFS #51",
+        "excerpt": "Algorithms 분야의 BFS와 DFS #51에 대한 심도 있는 내용을 다룹니다. 신입생의 시각으로 정리해 보았습니다.",
+        "date": "2026-05-18",
+        "category": "Algorithms",
+        "readTime": "13 min",
+        "content": "# BFS와 DFS #51\n\n이것은 Algorithms 카테고리에 속하는 BFS와 DFS #51의 상세 내용입니다.\n\n## 주요 내용\n- 첫 번째 포인트\n- 두 번째 포인트\n\n앞으로 더 많은 내용을 공부하며 채워나갈 예정입니다."
+    },
+    {
+        "id": 52,
+        "title": "동적 계획법(DP) 기초 #52",
+        "excerpt": "Algorithms 분야의 동적 계획법(DP) 기초 #52에 대한 심도 있는 내용을 다룹니다. 신입생의 시각으로 정리해 보았습니다.",
+        "date": "2026-05-19",
+        "category": "Algorithms",
+        "readTime": "11 min",
+        "content": "# 동적 계획법(DP) 기초 #52\n\n이것은 Algorithms 카테고리에 속하는 동적 계획법(DP) 기초 #52의 상세 내용입니다.\n\n## 주요 내용\n- 첫 번째 포인트\n- 두 번째 포인트\n\n앞으로 더 많은 내용을 공부하며 채워나갈 예정입니다."
+    },
+    {
+        "id": 53,
+        "title": "동적 계획법(DP) 기초 #53",
+        "excerpt": "Algorithms 분야의 동적 계획법(DP) 기초 #53에 대한 심도 있는 내용을 다룹니다. 신입생의 시각으로 정리해 보았습니다.",
+        "date": "2026-05-20",
+        "category": "Algorithms",
+        "readTime": "6 min",
+        "content": "# 동적 계획법(DP) 기초 #53\n\n이것은 Algorithms 카테고리에 속하는 동적 계획법(DP) 기초 #53의 상세 내용입니다.\n\n## 주요 내용\n- 첫 번째 포인트\n- 두 번째 포인트\n\n앞으로 더 많은 내용을 공부하며 채워나갈 예정입니다."
+    },
+    {
+        "id": 54,
+        "title": "링크드 리스트의 이해 #54",
+        "excerpt": "Data Structures 분야의 링크드 리스트의 이해 #54에 대한 심도 있는 내용을 다룹니다. 신입생의 시각으로 정리해 보았습니다.",
+        "date": "2026-05-21",
+        "category": "Data Structures",
+        "readTime": "15 min",
+        "content": "# 링크드 리스트의 이해 #54\n\n이것은 Data Structures 카테고리에 속하는 링크드 리스트의 이해 #54의 상세 내용입니다.\n\n## 주요 내용\n- 첫 번째 포인트\n- 두 번째 포인트\n\n앞으로 더 많은 내용을 공부하며 채워나갈 예정입니다."
     }
 ]
